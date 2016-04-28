@@ -1,0 +1,30 @@
+mixin thumb(link, img, name, lang)
+ a(href="#{link}" style="background-image: url(assets/img/post-img/#{img});").article-thumb
+   .article-meta
+     .name #{name}
+     .date #{lang}
+
+section.articles#articles
+  .flex.flex--center
+
+    .col-50.flex.flex--center <!--.order-first-->
+      .col-1
+        .desc-wrap
+          p.home-lead.outdented ...Writing and designing projects...
+          a(href="project").home-cta See All Projects
+          
+          
+    .col-50
+      .article-wrap
+        +thumb('../project/projects/fun-facts/', 'fun-facts.jpg', 'Fun-Facts', 'Swift')
+        +thumb('../project/projects/inspiration-rails/', 'rails.png', 'Inspiration', 'Ruby on Rails')
+        +thumb('../project/projects/pw-wordpress/', 'pw-wordpress.png', 'Prevailing Wins', 'Wordpress')
+        +thumb('../project/projects/alternative-to-do/', 'to-do.png', 'To-Do List', 'JQuery')
+        +thumb('../project/projects/trying-starwars-bb-8/', 'star-wars.jpg', 'StarWars BB 8', 'Jade and SASS')
+        +thumb('../project/projects/annoy-your-gf/', 'gfbf-chat.jpg', 'Funny Chat', 'HTML and CSS')
+        +thumb('../project/projects/music-player/', 'music.jpg' , 'Music Player', 'JQuery')
+        +thumb('../project/projects/hows-moving-castle/', 'moving-castle.png', 'Hows Moving Castle', 'JQuery')
+        +thumb('../project/projects/assassin-creed-brotherhood/', 'fav-game.png', 'Assassin Creed', 'JQuery')
+        +thumb('../project/projects/javascript-goals/', 'wordcup.png', 'Wordcup Goals', 'JQuery')
+        +thumb('../project/projects/before-and-after-video/', 'before-after.png', 'Before and After Video', 'HTML and CSS')
+        +thumb('../project/projects/doomsday-clock/', 'dooms-day.png', 'Dooms Day Clock','JQuery')

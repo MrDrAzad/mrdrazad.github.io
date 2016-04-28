@@ -1,0 +1,23 @@
+mixin face(face, words, name)
+  li.face(style="background-image: url(/assets/img/testimonial-avatars/#{face});")
+    .bubble
+      p #{words}
+      cite — #{name}
+
+section.mentoring#mentoring
+  .flex.flex--center
+    .col-50.flex.flex--center
+      .col-1
+        ul.faces
+          +face("andrew.jpg", "Faizal helps us with our inventory and helps us determine which and how many loaves of bread to bake the following day. We also use Register to spot trends in the daily sales summary.","Parvez Tai")
+          +face("gareth.jpg", "It worked in a much more natural and intuitive way than the accounting software I was accustomed to using.","Dinesh Patel")
+          +face("joey.jpg", "We want to make sure that our vendors get paid on time and that our partners are happy.","Asian Paints")
+          +face("lj.jpg", "We didn’t have a solution to count usuage of Gas. When I found Faizal, I knew that this person could help and he was exactly what we needed.","Nilkant Quarry")
+          +face("kim.jpg", "Now people are telling us how great our site looks on all platforms – and I’m telling them about the awesome support I got from Faizal.","JST")
+          +face("mary.jpg", "I get comments about how clean and professional my software looks all the time and all credit goes to Faizal","Novality Store")
+          li.back-btn.face
+    
+    .col-50.flex.flex--center
+      .col-1
+        p.home-lead.outdented ...Receiving testimonial from people like you...
+        a(href="").home-cta Schedule a Call

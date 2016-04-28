@@ -1,0 +1,27 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    li: a(href="#design") Design
+    li: a(href="#articles") Project
+    li: a(href="#mentoring") Testimonial
+    li: a(href="#youtube") Youtube
+    li: a(href="#vine") Vine
+    li: a(href="#notes") Notes
+    li: a(href="#contact") Resume
+
+.mobile-nav
+  +nav-content()
+
+header
+  .header-position
+    h1.logo Faizal Shaikh
+    
+    nav.site-nav 
+      +nav-content
+        
+    a(href="mailto:faizal@msbsindia.com").email-link +Email Me
+        
+    .mobile-nav-toggle: span
+      
+      
+      
